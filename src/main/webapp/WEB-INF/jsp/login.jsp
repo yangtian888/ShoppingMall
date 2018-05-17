@@ -41,14 +41,14 @@
    </div><!--loginLeft/-->
    <div class="loginRight">
    
-    <form action="" method="get" class="login" >
+    <form action="${contextPath}/index" method="POST" class="login" >
     
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
      
      <label>邮箱/用户名/已验证手机</label>
-     <input type="text" class="userName" />
+     <input type="text" class="userName" id ="username" name="username"/>
      <label>密码</label>
-     <input type="password" class="password" />
+     <input type="password" class="password" id="password" name="password"/>
      <div class="remember-me">
       <input type="checkbox" id="remember-me" name="remember-me"/> 一周内免登陆 <a href="#">忘记密码</a>
      </div><!--jizhu/-->

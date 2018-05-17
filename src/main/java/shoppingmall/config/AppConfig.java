@@ -77,7 +77,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 		return new DataSourceTransactionManager(dataSource);
 	}
 	@Bean
-		public PasswordEncoder passwordEncoder(){
-			return new BCryptPasswordEncoder();
-		}
+	public PasswordEncoder passwordEncoder(){
+		return new BCryptPasswordEncoder();
+	}
 }

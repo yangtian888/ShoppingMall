@@ -6,6 +6,6 @@ public interface UserMapper {
 
 	User findOneByUsername(String username);
 
-	void creat(User user);
+	void create(User user);
 
 }

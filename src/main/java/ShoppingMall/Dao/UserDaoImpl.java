@@ -15,8 +15,8 @@ public class UserDaoImpl implements UserDao{
 		return userMapper.findOneByUsername(username);
 	}
 
-	public void creat(User user) {
-		userMapper.creat(user);
+	public void create(User user) {
+		userMapper.create(user);
 	}
 
 }

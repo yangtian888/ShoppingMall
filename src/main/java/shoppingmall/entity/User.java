@@ -1,8 +1,12 @@
 package shoppingmall.entity;
 
+import javax.validation.constraints.Size;
+
 public class User {
 	    private Integer id;
+	    @Size(min=2,max=16,message="用户名必须是2~16个字")
 		private String username;
+	    @Size(min = 3 ,max = 64 ,message="密码长度为6~64")
 		private String password;
 		private Integer phone;
 		private String role;

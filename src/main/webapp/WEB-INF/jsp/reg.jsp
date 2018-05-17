@@ -50,7 +50,7 @@
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
      <label for="email">邮箱：</label>
-     <input type="text" id="email" name="eMail"/>
+     <input type="text" id="email" name="email"/>
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
      <label for="tel">手机号码：</label>
@@ -81,7 +81,7 @@
     </div><!--regSub/--> 
    </form><!--/-->
    
-   <form action="login" method="POST" class="regForm">
+   <form action="${contextPath}/login" method="POST" class="regForm">
    
     <div class="loginBuyList">
      <label for="name">用户名：</label>
@@ -89,19 +89,19 @@
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
      <label for="email">邮箱：</label>
-     <input type="text" id="email" name="eMall"/>
+     <input type="text" id="email" name="emall"/>
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
      <label for="tel">手机号码：</label>
      <input type="text" id="tel" name="phone"/>
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
-     <label for="pwd">设置密码：</label>
-     <input type="password" id="pwd" name="password"/>
+     <label for="password">设置密码：</label>
+     <input type="password" id="password" name="password"/>
     </div><!--loginBuyList/-->
     <div class="loginBuyList" style="border:#DEDEDE 1px solid;">
-     <label for="pwd1">确认密码：</label>
-     <input type="password" id="pwd1" name="password1"/>
+     <label for="password1">确认密码：</label>
+     <input type="password" id="password1" name="password1"/>
     </div><!--loginBuyList/-->
     
     <div class="loginBuyyan">

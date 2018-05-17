@@ -4,5 +4,6 @@ import shoppingmall.entity.User;
 
 public interface UserDao {
 	User findOneByUsername(String username);
-	void creat(User user);
+	
+	void create(User user);
 }

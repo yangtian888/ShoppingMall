@@ -1,7 +1,10 @@
 package shoppingmall.controller;
 import javax.naming.Binding;
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +34,7 @@ public class UserController {
 		return "reg";
 	}
 	@RequestMapping(method= RequestMethod.POST, value = "/register")
-	public String regis(@ModelAttribute User user,BindingResult bindingResult){
+	public String regis(@Valid @ModelAttribute User user,BindingResult bindingResult,String password1,Model model){
 		if (bindingResult.hasErrors()) {
 			return "rediret:/reg";
 		}else{
