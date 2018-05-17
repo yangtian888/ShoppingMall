@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="shoppingmall.dao.mapper.UserMapper">
+  <select id="findOneByUsername" resultType="User">
+	select * from shoppingUser where username = #{username}
+  </select>
+  
+  <insert id="create" >
+          insert into shoppinguser(id,username,email,phone,password)values
+          (shoppinguser_seq.nextval,#{username},#{email},${phone},${password}) 
+  </insert>
+  
+  
+ </mapper> 
+
+

@@ -3,26 +3,29 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <c:set var="contextPath" value="${pageContext.request.contextPath }"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>login</title>
+<title>uniqe</title>
 <link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
 <script type="text/javascript" src="${contextPath}/assets/js/jquery.js"></script>
 <script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
 </head>
 <body>
+<c:if test="${param.error!=null }">
+<h4 style="color:red;">登录失败，账号或密码错误</h4>
+</c:if>
 <div class="hrader" id="header">
   <a href="${contextPath}/login" style="color:#FD7306;margin-left:20px;">请登录</a> 
-  <a href="${contextPath}/regist">注册</a>
+  <a href="${contextPath}/register">注册</a>
   <div class="topNav">
-   <a href="index.jsp" style="color:#FD7306;">首页</a>
-   <a href="buy.jsp">买家</a>
-   <a href="sell.jsp">卖家</a>
-   <a href="vip.jsp">会员中心</a>
-   <a href="xuanshang.jsp">悬赏榜</a>
-   <a href="luntan.jsp" class="luntan">论坛</a>
-   <a href="help.jsp">帮助</a>
+   <a href="${contextPath}/index" style="color:#FD7306;">首页</a>
+   <a href="${contextPath}/buy">买家</a>
+   <a href="${contextPath}/sell">卖家</a>
+   <a href="${contextPath}/vip">会员中心</a>
+   <a href="${contextPath}/xuanshang">悬赏榜</a>
+   <a href="${contextPath}/luntan" class="luntan">论坛</a>
+   <a href="${contextPath}/help">帮助</a>
    <a href="#">&nbsp;</a>
    <a href="#" class="lan">中文</a>
    <a href="#" class="lan">English</a>
@@ -30,7 +33,7 @@
  </div><!--hrader/-->
  <div class="mainCont">
   <h1 class="logo" style="text-align:left;">
-  <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
   <div class="loginBox">
    <div class="loginLeft">
@@ -38,15 +41,16 @@
    </div><!--loginLeft/-->
    <div class="loginRight">
    
-    <form action="" method="post" class="login" >
+    <form action="" method="get" class="login" >
     
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+     
      <label>邮箱/用户名/已验证手机</label>
-     <input type="text" class="loginName" name ="username"/>
+     <input type="text" class="userName" />
      <label>密码</label>
-     <input type="password" class="loginPwd" name="password"/>
-     <div class="jizhu">
-      <input type="checkbox" /> 一周内免登陆 <a href="#">忘记密码</a>
+     <input type="password" class="password" />
+     <div class="remember-me">
+      <input type="checkbox" id="remember-me" name="remember-me"/> 一周内免登陆 <a href="#">忘记密码</a>
      </div><!--jizhu/-->
      <div class="loginSub">
       <input type="submit" value=" 登 录 " />
@@ -62,7 +66,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.jsp"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

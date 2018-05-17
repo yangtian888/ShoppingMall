@@ -1,8 +1,11 @@
-package shoppingmall.dao;
-
+package shoppingmall.dao.mapper;
 import shoppingmall.entity.User;
 
-public interface UserDao {
+
+public interface UserMapper {
+
 	User findOneByUsername(String username);
+
 	void creat(User user);
+
 }

@@ -14,15 +14,15 @@
 <body>
 <div class="hrader" id="header">
   <a href="${contextPath}/login" style="color:#FD7306;margin-left:20px;">请登录</a> 
-  <a href="${contextPath}/regist">注册</a>
+  <a href="${contextPath}/register">注册</a>
   <div class="topNav">
-   <a href="index.jsp" style="color:#FD7306;">首页</a>
-   <a href="buy.jsp">买家</a>
-   <a href="sell.jsp">卖家</a>
-   <a href="vip.jsp">会员中心</a>
-   <a href="xuanshang.jsp">悬赏榜</a>
-   <a href="luntan.jsp" class="luntan">论坛</a>
-   <a href="help.jsp">帮助</a>
+   <a href="${contextPath}/index" style="color:#FD7306;">首页</a>
+   <a href="${contextPath}/buy">买家</a>
+   <a href="${contextPath}/sell">卖家</a>
+   <a href="${contextPath}/vip">会员中心</a>
+   <a href="${contextPath}/xuanshang">悬赏榜</a>
+   <a href="${contextPath}/luntan" class="luntan">论坛</a>
+   <a href="${contextPath}/help">帮助</a>
    <a href="#">&nbsp;</a>
    <a href="#" class="lan">中文</a>
    <a href="#" class="lan">English</a>
@@ -30,7 +30,7 @@
  </div><!--hrader/-->
  <div class="mainCont">
   <h1 class="logo" style="text-align:left;">
-  <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
   <div class="loginBuy">
   <div class="loginBuyLeft">
@@ -58,11 +58,11 @@
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
      <label for="password">设置密码：</label>
-     <input type="password" id="pwd" name="password"/>
+     <input type="password" id="password" name="password"/>
     </div><!--loginBuyList/-->
     <div class="loginBuyList" style="border:#DEDEDE 1px solid;">
-     <label for="pwd1">确认密码：</label>
-     <input type="password" id="pwd1" name="password1"/>
+     <label for="password1">确认密码：</label>
+     <input type="password" id="password1" name="password1"/>
     </div><!--loginBuyList/-->
     
     <div class="loginBuyyan">
@@ -74,14 +74,14 @@
      </div>
     </div><!--loginBuyList/-->
     <div class="falv">
-     <input type="checkbox" /> <span>我已阅读并同意<a href="xieyi.jsp" target="_blank">《uniqueZi协议》</a></span>
+     <input type="checkbox" /> <span>我已阅读并同意<a href="${contextPath}/xieyi" target="_blank">《uniqueZi协议》</a></span>
     </div><!--falv/-->
     <div class="regSubs">
      <input type="submit" value=" 注 册 " />
     </div><!--regSub/--> 
    </form><!--/-->
    
-   <form action="login.jsp" method="POST" class="regForm">
+   <form action="login" method="POST" class="regForm">
    
     <div class="loginBuyList">
      <label for="name">用户名：</label>
@@ -113,7 +113,7 @@
      </div>
     </div><!--loginBuyList/-->
     <div class="falv">
-     <input type="checkbox" /> <span>我已阅读并同意<a href="xieyi.jsp" target="_blank">《uniqueZi协议》</a></span>
+     <input type="checkbox" /> <span>我已阅读并同意<a href="${contextPath}/xieyi" target="_blank">《uniqueZi协议》</a></span>
     </div><!--falv/-->
     <div class="regSubs">
      <input type="submit" value=" 注 册 " />
@@ -137,7 +137,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.jsp"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />
