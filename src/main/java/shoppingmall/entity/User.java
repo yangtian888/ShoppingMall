@@ -11,6 +11,50 @@ public class User {
 		private Integer phone;
 		private String role;
 		private String email;
+		
+		private String realname;
+		private String city;
+		private String sex;
+		private String idcard;
+		private String category;
+		private String sysopsis;
+		
+		public String getRealname() {
+			return realname;
+		}
+		public void setRealname(String realname) {
+			this.realname = realname;
+		}
+		public String getCity() {
+			return city;
+		}
+		public void setCity(String city) {
+			this.city = city;
+		}
+		public String getSex() {
+			return sex;
+		}
+		public void setSex(String sex) {
+			this.sex = sex;
+		}
+		public String getIdcard() {
+			return idcard;
+		}
+		public void setIdcard(String idcard) {
+			this.idcard = idcard;
+		}
+		public String getCategory() {
+			return category;
+		}
+		public void setCategory(String category) {
+			this.category = category;
+		}
+		public String getSysopsis() {
+			return sysopsis;
+		}
+		public void setSysopsis(String sysopsis) {
+			this.sysopsis = sysopsis;
+		}
 		public Integer getId() {
 			return id;
 		}
@@ -50,8 +94,10 @@ public class User {
 		@Override
 		public String toString() {
 			return "User [id=" + id + ", username=" + username + ", password=" + password + ", phone=" + phone
-					+ ", role=" + role + ", email=" + email + "]";
+					+ ", role=" + role + ", email=" + email + ", realname=" + realname + ", city=" + city + ", sex="
+					+ sex + ", idcard=" + idcard + ", category=" + category + ", sysopsis=" + sysopsis + "]";
 		}
+		
 		
 		
 		

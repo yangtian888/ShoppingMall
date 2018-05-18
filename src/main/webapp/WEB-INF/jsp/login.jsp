@@ -41,7 +41,7 @@
    </div><!--loginLeft/-->
    <div class="loginRight">
    
-    <form action="${contextPath}/index" method="POST" class="login" >
+    <form action="" method="post" class="login" >
     
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
      
@@ -66,7 +66,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

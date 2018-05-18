@@ -31,7 +31,8 @@
   <h1 class="logo" style="text-align:left;">
   <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  <form action="#" method="get" class="subBox">
+  <form action="" method="post" class="subBox">
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div class="subBox2">
     <input type="text" class="subText" />
     <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />

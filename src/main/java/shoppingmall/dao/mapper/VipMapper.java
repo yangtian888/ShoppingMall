@@ -1,7 +1,9 @@
-package shoppingmall.service;
+package shoppingmall.dao.mapper;
 
 import shoppingmall.entity.User;
 
-public interface VipService {
+public interface VipMapper {
+
 	void saveinfo(User user);
+
 }

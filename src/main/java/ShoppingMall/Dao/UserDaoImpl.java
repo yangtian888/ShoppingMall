@@ -19,4 +19,6 @@ public class UserDaoImpl implements UserDao{
 		userMapper.create(user);
 	}
 
+	
+
 }

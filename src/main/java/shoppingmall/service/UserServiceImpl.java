@@ -33,6 +33,8 @@ public class UserServiceImpl implements UserService,UserDetailsService{
 		}
     	return new UserDetailsImpl(user);
 	}
+
+	
 }   
   class UserDetailsImpl extends org.springframework.security.core.userdetails.User{
     		private static final long serialVersionUID = 1L;

@@ -40,7 +40,7 @@
     <div class="clears"></div>
    </ul><!--regEq/-->
    
-   <form action="" method="post" class="regForm">
+   <form action="" method="POST" class="regForm">
    
    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    
@@ -57,6 +57,7 @@
      <input type="text" id="tel" name="phone" />
     </div><!--loginBuyList/-->
     <div class="loginBuyList">
+           ${error}
      <label for="password">设置密码：</label>
      <input type="password" id="password" name="password"/>
     </div><!--loginBuyList/-->
@@ -81,7 +82,7 @@
     </div><!--regSub/--> 
    </form><!--/-->
    
-   <form action="${contextPath}/login" method="POST" class="regForm">
+   <form action="" method="POST" class="regForm">
    
     <div class="loginBuyList">
      <label for="name">用户名：</label>

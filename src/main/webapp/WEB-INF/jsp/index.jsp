@@ -14,8 +14,8 @@
 
 <body>
  <div class="hrader">
-  <a href="login.jsp" style="color:#FD7306;margin-left:20px;">请登录</a> 
-  <a href="reg.jsp">注册</a>
+  <a href="${contextPath}/login" style="color:#FD7306;margin-left:20px;">请登录</a> 
+  <a href="${contextPath}/register">注册</a>
   <div class="topNav">
    <a href="index.jsp" style="color:#FD7306;">首页</a>
    <a href="buy.jsp">买家</a>
@@ -31,7 +31,7 @@
  </div><!--hrader/-->
  <div class="inCont">
   <h1 class="logo"><a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a></h1>
-  <form class="select" action="prolist.jsp" method="get">
+  <form class="select" action="" method="POST">
    <div>
     <input type="text" value="请输入你需要的产品" class="selName" onFocus=OnEnter(this) onBlur=OnExit(this) />
     <input type="image" src="${contextPath}/assets/images/sub.png" width="99" height="36" class="sel" />
