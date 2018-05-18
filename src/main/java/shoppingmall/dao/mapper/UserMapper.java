@@ -8,6 +8,10 @@ public interface UserMapper {
 
 	void create(User user);
 
+	void alterPassword(Integer id, String encode);
+
+	void saveinfo(User user);
+
 	
 
 }

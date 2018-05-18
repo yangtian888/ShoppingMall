@@ -52,9 +52,6 @@ public class UserController {
 		return "redirect:/login" ;
 	} 
 	
-	@RequestMapping(method=RequestMethod.GET,value="/index")
-	public String index(){
-		return "index" ;
-	}
+	
 	
 }

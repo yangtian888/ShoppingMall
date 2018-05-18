@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="shoppingmall.dao.mapper.CommodityMapper">
+  
+  <select id="findAll" resultType="Commodity">
+	     select * from pro
+  </select>
+  
+  <select id="findOne" resultType="Commodity">
+	     select * from pro where id = #{id}
+  </select>
+  
+</mapper>
+

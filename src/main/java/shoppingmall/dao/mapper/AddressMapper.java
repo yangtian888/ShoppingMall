@@ -1,15 +1,10 @@
-package shoppingmall.dao;
+package shoppingmall.dao.mapper;
 
 import java.util.List;
 
-import shoppingmall.entity.User;
 import shoppingmall.entity.VipAddress;
 
-public interface VipDao {
-	void saveinfo(User user);
-
-	void alterPassword(Integer id, String encode);
-
+public interface AddressMapper {
 	void addAddress(VipAddress address);
 
 	List<VipAddress> findAll(Integer id);
