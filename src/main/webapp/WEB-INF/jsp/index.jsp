@@ -32,6 +32,7 @@
  <div class="inCont">
   <h1 class="logo"><a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a></h1>
   <form class="select" action="" method="POST">
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div>
     <input type="text" value="请输入你需要的产品" class="selName" onFocus=OnEnter(this) onBlur=OnExit(this) />
     <input type="image" src="${contextPath}/assets/images/sub.png" width="99" height="36" class="sel" />

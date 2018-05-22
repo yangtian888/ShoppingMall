@@ -32,6 +32,7 @@
   <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
   <form action="" method="get" class="subBox">
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div class="subBox2">
     <input type="text" class="subText" />
     <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
@@ -59,7 +60,7 @@
    <li><a href="index.jsp">首页</a></li>
    <li><a href="buy.jsp">买家</a></li>
    <li><a href="sell.jsp">卖家</a></li>
-   <li><a href="vip.jsp">会员中心</a></li>
+   <li><a href="${contextPath}/vip">会员中心</a></li>
    <li><a href="xuanshang.jsp">悬赏榜</a></li>
    <li><a href="luntan.jsp" class="luntan">论坛</a></li>
    <li><a href="help.jsp">帮助</a></li>

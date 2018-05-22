@@ -20,13 +20,13 @@ public class User {
 	private String password;
 	
 	@NotNull
-	@Pattern(regexp="^1[3|4|5|7|8][0-9]{9}$",message="手机号不正确")
+	//@Pattern(regexp="^1[3|4|5|7|8][0-9]{9}$",message="手机号不正确")
 	private String phone;
 	
 	private String role;
 	
 	@NotNull
-	@Email(regexp="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.[a-zA-Z0-9]{2,6}$",message="邮箱不符合规则")
+	//@Email(regexp="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\\.[a-zA-Z0-9]{2,6}$",message="邮箱不符合规则")
 	private String email;
 	
 	private String realname;

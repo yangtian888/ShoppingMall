@@ -21,7 +21,10 @@ public class GoodsController {
 	public String index(){
 		return "index";
 	}
-	
+	@RequestMapping(method=RequestMethod.POST,value="/index")
+	public String inde(){
+		return "prolist";
+	}
 	//商品列表展示
 	@RequestMapping(method=RequestMethod.GET,value="/prolist")
 	public String prolist(Model model){
@@ -29,7 +32,10 @@ public class GoodsController {
 		model.addAttribute("commodity", commodity);
 		return "prolist";
 	}
-	
+	@RequestMapping(method=RequestMethod.GET,value="/vip")
+	public String vip(){
+		return "vip";
+	}
 	//商品详情展示
 	@RequestMapping(method=RequestMethod.GET,value="/buyinfo/{id}")
     public String buyinfo(@PathVariable int id ,Model model){
