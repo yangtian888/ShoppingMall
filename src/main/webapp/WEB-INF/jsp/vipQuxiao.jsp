@@ -1,18 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
-    <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>    
+   <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>vipOrder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>unique</title>
 <link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
 <script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
+
 </head>
+
 <body>
-<div class="hrader" id="header">
+ <div class="hrader" id="header">
   <div class="top">
    <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
    <a href="${contextPath}/reg">注册</a>
@@ -31,9 +33,7 @@
   <h1 class="logo" style="text-align:left;">
   <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  
-  <form action="" method="get" class="subBox">
-  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+  <form action="#" method="get" class="subBox">
    <div class="subBox2">
     <input type="text" class="subText" />
     <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
@@ -74,75 +74,104 @@
    <h3 class="vipName">测试webqin</h3>
    <dl class="vipNav">
     <dt class="vip_1 vipCur">买家中心</dt>
-     <dd class="ddCur"><a href="${contextPath}/vipOrder">我的订单</a></dd>
-     <dd><a href="#">收藏关注</a></dd>
+     <dd><a href="${contextPath}/vipOrder">我的订单</a></dd>
+     <dd><a href="vipShoucang.html">收藏关注</a></dd>
     <dt class="vip_2">账户设置</dt>
      <dd><a href="${contextPath}/vip">个人信息</a></dd>
      <dd><a href="${contextPath}/vipPwd">密码修改</a></dd>
      <dd><a href="${contextPath}/vipAddress">收货地址</a></dd>
      <dd><a href="${contextPath}/vipXiaofei">消费记录</a></dd>
     <dt class="vip_3">客户服务</dt>
-     <dd><a href="${contextPath}/vipQuxiao">取消订单/退货</a></dd>
+     <dd class="ddCur"><a href="${contextPath}/vipQuxiao">取消订单/退货</a></dd>
      
      <dd><a href="#">我的投诉</a></dd>
    </dl><!--vipNav/-->
   </div><!--vipLeft/-->
   <div class="vipRight">
-   <h2 class="vipTitle">我的订单</h2>
+   <h2 class="vipTitle">取消订单/退货</h2>
    
-   <h2 class="oredrName">
-    我的订单 <span style="margin-left:40px;">待发货 <span class="red">10</span> </span>
-    <span>待收货 <span class="red">15</span></span>
-    </h2>
-    <table class="vipOrder">
-     <tr>
-      <td><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></a></td>
-      <td>张益达</td>
-      <td>￥16.9<br />支付宝支付</td>
-      <td>2014年6月23日11:32:17</td>
-      <td><a href="${contextPath}/success"><strong>等待付款</strong></a></td>
-      <td><a href="${contextPath}/vipXiaofei">查看</a></td>
-     </tr>
-     <tr>
-      <td><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></a></td>
-      <td>张益达</td>
-      <td>￥16.9<br />支付宝支付</td>
-      <td>2014年6月23日11:32:17</td>
-      <td><a href="success.jsp"><strong>等待付款</strong></a></td>
-      <td><a href="vipXiaofei.jsp">查看</a></td>
-     </tr>
-     <tr>
-      <td><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></a></td>
-      <td>张益达</td>
-      <td>￥16.9<br />支付宝支付</td>
-      <td>2014年6月23日11:32:17</td>
-      <td><a href="success.jsp"><strong>等待付款</strong></a></td>
-      <td><a href="vipXiaofei.jsp">查看</a></td>
-     </tr>
-     <tr>
-      <td><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></a></td>
-      <td>张益达</td>
-      <td>￥16.9<br />支付宝支付</td>
-      <td>2014年6月23日11:32:17</td>
-      <td><a href="success.jsp"><strong>等待付款</strong></a></td>
-      <td><a href="vipXiaofei.jsp">查看</a></td>
-     </tr>
-     <tr>
-      <td><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></a></td>
-      <td>张益达</td>
-      <td>￥16.9<br />支付宝支付</td>
-      <td>2014年6月23日11:32:17</td>
-      <td><a href="success.jsp"><strong>等待付款</strong></a></td>
-      <td><a href="vipXiaofei.jsp">查看</a></td>
-     </tr>
-    </table><!--vipOrder/-->
+   <table class="vipQuxiao">
+    <tr>
+     <th>订单编号</th>
+     <th>宝贝信息</th>
+     <th>卖家</th>
+     <th>交易金额</th>
+     <th>退款金额</th>
+     <th>退款状态</th>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+    <tr>
+     <td>4894983168496516</td>
+     <td><img src="${contextPath}/assets/images/phone.png" width="60" height="55"></td>
+     <td>unique</td>
+     <td class="red">￥1899</td>
+     <td class="green">￥1899</td>
+     <td><strong>退款成功</strong></td>
+    </tr>
+   </table>
+   
   </div><!--vipRight/-->
   <div class="clears"></div>
  </div><!--vipBox/-->
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.jsp"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

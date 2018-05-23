@@ -5,13 +5,23 @@
   
  <mapper namespace="shoppingmall.dao.mapper.UserMapper">
   <select id="findOneByUsername" resultType="User">
-	    select * from shoppinguser where username = #{username}
+	 select * from shoppingUser where username = #{username}
   </select>
   
-  <insert id="create" >
-         insert into shoppinguser(id,username,email,phone,password)
-         values(shoppinguser_seq.nextval,#{username},#{email},#{phone},#{password}) 
+  <insert id="create">
+     insert into shoppinguser(id,username,email,phone,password) values
+     (shoppinguser_seq.nextval,#{username},#{email},#{phone},#{password}) 
   </insert>
+   
+  <update id="saveinfo">
+	 update shoppinguser set realname=#{realname},city=#{city},sex=#{sex},email=#{email},
+	 idcard=#{idcard},synopsis=#{sysopsis},picturePath=#{picturePath}
+	 where id = #{id}
+  </update>
+  
+  <update id="alterPassword">
+     update shoppinguser set password=#{encode} where id =#{id}
+  </update>
   
   
  </mapper> 

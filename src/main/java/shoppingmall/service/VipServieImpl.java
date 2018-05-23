@@ -1,14 +1,16 @@
 package shoppingmall.service;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import shoppingmall.dao.VipDao;
 import shoppingmall.dao.VipDao;
 import shoppingmall.entity.User;
 import shoppingmall.entity.VipAddress;
 
+@Transactional
 @Service
 public class VipServieImpl implements VipService{
 private VipDao vipDao;

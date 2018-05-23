@@ -16,6 +16,7 @@ public class VipDaoImpl implements VipDao{
 	private UserMapper userMapper;
 	@Autowired
 	private AddressMapper addressMapper;
+	
 	@Override
 	public void saveinfo(User user) {
 		userMapper.saveinfo(user);
@@ -29,14 +30,17 @@ public class VipDaoImpl implements VipDao{
 	public void addAddress(VipAddress address) {
 		addressMapper.addAddress(address);
 	}
+	
 	@Override
 	public List<VipAddress> findAll(Integer id) {
 		return addressMapper.findAll(id);
 	}
+	
 	@Override
 	public void delete(Integer id) {
            addressMapper.delete(id);		
 	}
+	
 	@Override
 	public void alterAddress(VipAddress vipAddress) {
                addressMapper.alterAddress(vipAddress);		

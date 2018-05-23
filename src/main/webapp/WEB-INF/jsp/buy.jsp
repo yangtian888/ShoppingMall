@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
+    <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>unique</title>
 <link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
-<script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${contextPath}/assets/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
 
 <!--瀑布流效果-->
@@ -25,12 +25,12 @@
 <body>
  <div class="hrader" id="header">
   <div class="top">
-   <a href="login.jsp" style="color:#C94E13;">请登录</a> 
-   <a href="reg.jsp">注册</a>
+   <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
+   <a href="${contextPath}/reg">注册</a>
    <ul class="topNav">
-     <li><a href="order.jsp">我的订单 </a></li>
-    <li class="gouwuche"><a href="car.jsp">购物车</a> <strong style="color:#C94E13;">3</strong></li>
-    <li class="shoucangjia"><a href="shoucang.jsp">收藏夹</a></li>
+     <li><a href="${contextPath}/order">我的订单 </a></li>
+    <li class="gouwuche"><a href="${contextPath}/car">购物车</a> <strong style="color:#C94E13;">3</strong></li>
+    <li class="shoucangjia"><a href="#">收藏夹</a></li>
     <li class="kefus"><a href="#">联系客服</a></li>
     <li><a href="#" class="lan">中文</a></li>
     <li><a href="#" class="lan">English</a></li>
@@ -40,9 +40,10 @@
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  <form action="#" method="get" class="subBox">
+  
+  <form action="" method="get" class="subBox">
   <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div class="subBox2">
     <input type="text" class="subText" />
@@ -58,23 +59,23 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="order.jsp"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="${contextPath}/order"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="car.jsp"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="${contextPath}/car"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
  </div><!--mid-->
  <div class="navBox navBg1">
   <ul class="nav">
-   <li><a href="index.jsp">首页</a></li>
-   <li class="navCur"><a href="buy.jsp">买家</a></li>
-   <li><a href="sell.jsp">卖家</a></li>
-   <li><a href="vip.jsp">会员中心</a></li>
-   <li><a href="xuanshang.jsp">悬赏榜</a></li>
-   <li><a href="luntan.jsp" class="luntan">论坛</a></li>
-   <li><a href="help.jsp">帮助</a></li>
+   <li><a href="${contextPath}/index">首页</a></li>
+   <li class="navCur"><a href="${contextPath}/buy">买家</a></li>
+   <li><a href="${contextPath}/sell">卖家</a></li>
+   <li><a href="${contextPath}/vip">会员中心</a></li>
+   <li><a href="#">悬赏榜</a></li>
+   <li><a href="#" class="luntan">论坛</a></li>
+   <li><a href="#">帮助</a></li>
    <div class="clears"></div>
   </ul><!--nav/-->
  </div><!--navBox/-->
@@ -91,7 +92,7 @@
    </div><!--focus/-->
   </div><!--banLeft/-->
   <div class="banRight">
-   <img src="images/xinpin.jpg" width="195" height="57" />
+   <img src="${contextPath}/assets/images/xinpin.jpg" width="195" height="57" />
    <div class="newPhone"><img src="${contextPath}/assets/images/newphone.jpg" width="87" height="163" /></div>
    <div class="phonePar">
     <span>华为荣耀6 H60-L01 移动4G</span><br />
@@ -114,67 +115,67 @@
 	<div id="container" style="width:990px;">
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="1" src="images/pixel.gif" data-original="images/1.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="1" src="${contextPath}/assets/images/pixel.gif" data-original="images/1.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="2" src="images/pixel.gif" data-original="images/2.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="2" src="${contextPath}/assets/images/pixel.gif" data-original="images/2.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="3" src="images/pixel.gif" data-original="images/3.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="3" src="${contextPath}/assets/images/pixel.gif" data-original="images/3.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="4" src="images/pixel.gif" data-original="images/4.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="4" src="${contextPath}/assets/images/pixel.gif" data-original="images/4.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="5" src="images/pixel.gif" data-original="images/5.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="5" src="${contextPath}/assets/images/pixel.gif" data-original="images/5.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="6" src="images/pixel.gif" data-original="images/6.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="6" src="${contextPath}/assets/images/pixel.gif" data-original="images/6.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="7" src="images/pixel.gif" data-original="images/7.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="7" src="${contextPath}/assets/images/pixel.gif" data-original="images/7.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="8" src="images/pixel.gif" data-original="images/8.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="8" src="${contextPath}/assets/images/pixel.gif" data-original="images/8.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="9" src="images/pixel.gif" data-original="images/9.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="9" src="${contextPath}/assets/images/pixel.gif" data-original="images/9.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="10" src="images/pixel.gif" data-original="images/10.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="10" src="${contextPath}/assets/images/pixel.gif" data-original="images/10.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="11" src="images/pixel.gif" data-original="images/11.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="11" src="${contextPath}/assets/images/pixel.gif" data-original="images/11.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="12" src="images/pixel.gif" data-original="images/12.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="12" src="${contextPath}/assets/images/pixel.gif" data-original="images/12.jpg" width="225" /></a>
 			</div>
 		</div>
 		<div class="grid">
 			<div class="imgholder">
-				<a href="buyinfo.jsp"><img class="lazy thumb_photo" title="13" src="images/pixel.gif" data-original="images/13.jpg" width="225" /></a>
+				<a href="${contextPath}/buyinfo"><img class="lazy thumb_photo" title="13" src="${contextPath}/assets/images/pixel.gif" data-original="images/13.jpg" width="225" /></a>
 			</div>
 		</div>
 	</div>
@@ -191,7 +192,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.jsp"><img src="images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

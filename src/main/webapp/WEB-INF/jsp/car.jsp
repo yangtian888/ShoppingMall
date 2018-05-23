@@ -14,12 +14,12 @@
 <body>
 <div class="hrader" id="header">
   <div class="top">
-   <a href="login.jsp" style="color:#C94E13;">请登录</a> 
-   <a href="reg.jsp">注册</a>
+   <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
+   <a href="${contextPath}/reg">注册</a>
    <ul class="topNav">
-    <li><a href="order.jsp">我的订单 </a></li>
-    <li class="gouwuche"><a href="car.jsp">购物车</a> <strong style="color:#C94E13;">3</strong></li>
-    <li class="shoucangjia"><a href="shoucang.jsp">收藏夹</a></li>
+    <li><a href="${contextPath}/order">我的订单 </a></li>
+    <li class="gouwuche"><a href="${contextPath}/car">购物车</a> <strong style="color:#C94E13;">3</strong></li>
+    <li class="shoucangjia"><a href="#">收藏夹</a></li>
     <li class="kefus"><a href="#">联系客服</a></li>
 <li><a href="#" class="lan">中文</a></li>
     <li><a href="#" class="lan">English</a></li>
@@ -29,9 +29,9 @@
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  <form action="#" method="get" class="subBox">
+  <form action="" method="get" class="subBox">
   <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div class="subBox2">
     <input type="text" class="subText" />
@@ -47,22 +47,22 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="order.jsp"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="${contextPath}/order"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="car.jsp"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="${contextPath}/car"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
  </div><!--mid-->
  <div class="navBox navBg3">
   <ul class="nav">
-   <li><a href="index.jsp">首页</a></li>
-   <li><a href="buy.jsp">买家</a></li>
-   <li><a href="sell.jsp">卖家</a></li>
-   <li><a href="vip.jsp">会员中心</a></li>
-   <li><a href="xuanshang.jsp">悬赏榜</a></li>
-   <li><a href="luntan.jsp" class="luntan">论坛</a></li>
+   <li><a href="${contextPath}/index">首页</a></li>
+   <li><a href="${contextPath}/buy">买家</a></li>
+   <li><a href="${contextPath}/sell">卖家</a></li>
+   <li><a href="${contextPath}/vip">会员中心</a></li>
+   <li><a href="#">悬赏榜</a></li>
+   <li><a href="#" class="luntan">论坛</a></li>
    <li class="navCur"><a href="help.jsp">帮助</a></li>
    <div class="clears"></div>
   </ul><!--nav/-->
@@ -164,7 +164,7 @@
      <td><input type="checkbox" /></td>
      <td>
       <dl>
-       <dt><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="85" height="85" /></a></dt>
+       <dt><a href="${contextPath}/proinfo"><img src="${contextPath}/assets/images/phone.png" width="85" height="85" /></a></dt>
        <dd>全球最大的中文搜索引擎、致力于让网民更便捷<br /><span class="red">有货：</span>从上海出发</dd>
        <div class="clears"></div>
       </dl>
@@ -190,8 +190,8 @@
     <strong>总计(不含运费)：</strong><strong class="red">￥70.42</strong>
    </div><!--zongji/-->
    <div class="jiesuan">
-    <a href="index.jsp" class="jie_1">继续购物&gt;&gt;</a>
-    <a href="order.jsp" class="jie_2">立即结算&gt;&gt;</a>
+    <a href="${contextPath}/index" class="jie_1">继续购物&gt;&gt;</a>
+    <a href="${contextPath}/order" class="jie_2">立即结算&gt;&gt;</a>
     <div class="clears"></div>
    </div><!--jiesuan/-->
    <div class="clears"></div>
@@ -200,7 +200,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.jsp"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

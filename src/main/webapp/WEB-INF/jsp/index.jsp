@@ -17,20 +17,20 @@
   <a href="${contextPath}/login" style="color:#FD7306;margin-left:20px;">请登录</a> 
   <a href="${contextPath}/register">注册</a>
   <div class="topNav">
-   <a href="index.jsp" style="color:#FD7306;">首页</a>
-   <a href="buy.jsp">买家</a>
-   <a href="sell.jsp">卖家</a>
-   <a href="vip.jsp">会员中心</a>
-   <a href="xuanshang.jsp">悬赏榜</a>
-   <a href="luntan.jsp" class="luntan">论坛</a>
-   <a href="help.jsp">帮助</a>
+   <a href="${contextPath}/index" style="color:#FD7306;">首页</a>
+   <a href="${contextPath}/buy">买家</a>
+   <a href="${contextPath}/sell">卖家</a>
+   <a href="${contextPath}/vip">会员中心</a>
+   <a href="#">悬赏榜</a>
+   <a href="#" class="luntan">论坛</a>
+   <a href="#">帮助</a>
    <a href="#">&nbsp;</a>
    <a href="#" class="lan">中文</a>
    <a href="#" class="lan">English</a>
   </div><!--topNav/-->
  </div><!--hrader/-->
  <div class="inCont">
-  <h1 class="logo"><a href="index.jsp"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a></h1>
+  <h1 class="logo"><a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a></h1>
   <form class="select" action="" method="POST">
   <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
    <div>
@@ -39,7 +39,7 @@
    </div>
   </form><!--select/-->
   <div class="ban">
-   <a href="prolist.jsp"><img src="${contextPath}/assets/images/phone.png" /></a>
+   <a href="${contextPath}/prolist"><img src="${contextPath}/assets/images/phone.png" /></a>
   </div><!--ban/-->
  </div><!--inCont/-->
  <div class="footer">

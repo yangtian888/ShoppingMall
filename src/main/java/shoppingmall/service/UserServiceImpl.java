@@ -7,21 +7,19 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import shoppingmall.dao.UserDao;
 import shoppingmall.entity.User;
 
+@Transactional
 @Service
 public class UserServiceImpl implements UserService,UserDetailsService{
 	@Autowired   
 	private UserDao userDao;
-	
-	@Autowired
-	private PasswordEncoder passwordEncoder;
 
 	public void create(User user) {
-		String encode = passwordEncoder.encode(user.getPassword());
-		user.setPassword(encode);
+		
 		userDao.create(user);
 	}
 

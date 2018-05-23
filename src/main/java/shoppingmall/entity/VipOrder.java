@@ -9,6 +9,7 @@ public class VipOrder {
 	private int   status ;
 	private Date ordertime;
 	private int paymentMethod;
+	
 	public Integer getId() {
 		return id;
 	}

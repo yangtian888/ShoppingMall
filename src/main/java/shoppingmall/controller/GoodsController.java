@@ -21,6 +21,7 @@ public class GoodsController {
 	public String index(){
 		return "index";
 	}
+	
 	@RequestMapping(method=RequestMethod.POST,value="/index")
 	public String inde(){
 		return "prolist";
@@ -32,6 +33,7 @@ public class GoodsController {
 		model.addAttribute("commodity", commodity);
 		return "prolist";
 	}
+	
 	@RequestMapping(method=RequestMethod.GET,value="/vip")
 	public String vip(){
 		return "vip";

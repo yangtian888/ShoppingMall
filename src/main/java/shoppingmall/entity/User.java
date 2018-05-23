@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class User {
 	private Integer id;
+	
 	@NotNull
 	@Size(min = 2,max = 16 ,message="长度为2~16")
 	private String username;

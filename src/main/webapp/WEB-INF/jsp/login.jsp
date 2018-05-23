@@ -23,9 +23,9 @@
    <a href="${contextPath}/buy">买家</a>
    <a href="${contextPath}/sell">卖家</a>
    <a href="${contextPath}/vip">会员中心</a>
-   <a href="${contextPath}/xuanshang">悬赏榜</a>
-   <a href="${contextPath}/luntan" class="luntan">论坛</a>
-   <a href="${contextPath}/help">帮助</a>
+   <a href="#">悬赏榜</a>
+   <a href="#" class="luntan">论坛</a>
+   <a href="#">帮助</a>
    <a href="#">&nbsp;</a>
    <a href="#" class="lan">中文</a>
    <a href="#" class="lan">English</a>
@@ -66,7 +66,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

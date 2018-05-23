@@ -20,15 +20,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/assets/**", "/login","/register","/index","/prolist").permitAll()
 			.antMatchers("/regist").permitAll()
 			.antMatchers("/**").authenticated()
+			
 			.and()
 			.formLogin() // 使用表单登录
 			.loginPage("/login") // 指定登录页面所在的地址
 			.defaultSuccessUrl("/index")
+			
 			.and()
-
 			.rememberMe() // 记住我配置
 			.tokenValiditySeconds(7 * 24 * 3600) // 有效期7天
-			.userDetailsService(userDetailsService)
-			;
+			.userDetailsService(userDetailsService);
 	}
 }
