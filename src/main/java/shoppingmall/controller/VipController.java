@@ -40,26 +40,27 @@ public class VipController {
 	@RequestMapping(method=RequestMethod.POST,value="/vipinfo")
 	//user1是登录的,user是表单提交的
 	//@AuthenticationPrincipal(expression="") 获取当前登录的对象
-	public String vipinfosave(@AuthenticationPrincipal(expression="user") User user1,@Valid @ModelAttribute User user,
-			BindingResult bindingResult,RedirectAttributes redirectAttributes) throws Exception{// 表单bean封装
-	     	if(user.getPicture().getSize()==0||
+	public String vipinfosave(@AuthenticationPrincipal(expression="user") User user1, @ModelAttribute User user
+			) throws Exception{// 表单bean封装
+	     /*	if(user.getPicture().getSize()==0||
 					!user.getPicture().getContentType().toLowerCase().startsWith("image/")){
 			      bindingResult.rejectValue("picture", "formError.pictureRequired", "请选择照片");	
-			}
+			}*/
 	  /*   	if(bindingResult.hasErrors()){
 			       return "vip";
 		}*/
 		    //把我登录的id设进表单，得到要改的id
 	     	//TODO
 	     	user.setId(user1.getId());
-	     	String filename = user.getPicture().getOriginalFilename();
+	     	System.out.println(user);
+	     	/*String filename = user.getPicture().getOriginalFilename();
 	        String newFileName = String.valueOf(System.currentTimeMillis())+filename;
             user.getPicture().transferTo(new File(uploadDir,newFileName));
-            user.setPicturePath(newFileName);
+            user.setPicturePath(newFileName);*/
 			vipService.saveinfo(user);
 			
 			// RedirectAttributes同时还可以作为Model用(addAttribute)，添加flash属性必须用addFlashAttribute
-			 redirectAttributes.addFlashAttribute("save");
+		/*	 redirectAttributes.addFlashAttribute("save");*/
 	     	  return "vip";
 	}
 	//密码修改
