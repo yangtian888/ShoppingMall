@@ -1,38 +1,38 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-    <c:set var="contextPath" value="${pageContext.request.contextPath }"></c:set>
+           <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>prolist</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>unique</title>
 <link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
 <script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
+
 </head>
+
 <body>
-<div class="hrader" id="header">
+ <div class="hrader" id="header">
   <div class="top">
-   <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
-   <a href="${contextPath}/reg">注册</a>
+    <%@include file="header.jspf" %>
    <ul class="topNav">
-     <li><a href="${contextPath}/order">我的订单 </a></li>
-    <li class="gouwuche"><a href="${contextPath}/car">购物车</a> <strong style="color:#C94E13;">3</strong></li>
-    <li class="shoucangjia"><a href="#">收藏夹</a></li>
+     <li><a href="order.html">我的订单 </a></li>
+    <li class="gouwuche"><a href="car.html">购物车</a> <strong style="color:#C94E13;">3</strong></li>
+    <li class="shoucangjia"><a href="shoucang.html">收藏夹</a></li>
     <li class="kefus"><a href="#">联系客服</a></li>
     <li><a href="#" class="lan">中文</a></li>
     <li><a href="#" class="lan">English</a></li>
-    <div class="clears"></div>
+    <div class="clears">	</div>
    </ul><!--topNav/-->
   </div><!--top/-->
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="index.html"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  <form action="" method="get" class="subBox">
-  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+  <form action="#" method="get" class="subBox">
    <div class="subBox2">
     <input type="text" class="subText" />
     <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
@@ -47,10 +47,10 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="${contextPath}/order"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="order.html"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="${contextPath}/car"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="car.html"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
@@ -58,16 +58,16 @@
  <div class="navBox navBg1">
   <ul class="nav">
    <li><a href="${contextPath}/index">首页</a></li>
-   <li><a href="${contextPath}/buy">买家</a></li>
-   <li><a href="${contextPath}/sell">卖家</a></li>
-   <li><a href="${contextPath}/vip">会员中心</a></li>
-   <li><a href="#">悬赏榜</a></li>
-   <li><a href="#" class="luntan">论坛</a></li>
-   <li><a href="#">帮助</a></li>
+   <li><a href="buy.html">买家</a></li>
+   <li><a href="sell.html">卖家</a></li>
+   <li><a href="${contextPath}/vipinfo">会员中心</a></li>
+   <li><a href="xuanshang.html">悬赏榜</a></li>
+   <li><a href="luntan.html" class="luntan">论坛</a></li>
+   <li><a href="help.html">帮助</a></li>
    <div class="clears"></div>
   </ul><!--nav/-->
  </div><!--navBox/-->
- <form action="" method="get" class="proDingzhi">
+ <form action="#" method="get" class="proDingzhi">
   <img src="${contextPath}/assets/images/dingzhi.jpg" width="972" height="167" />
   <div class="bdsharebuttonbox">
   <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
@@ -190,7 +190,7 @@
       <span class="duoxuan">
        多选
       </span><!--duoxuan/-->
-      <input type="image" src="${contextPath}/assets/images/queding.png" class="queen2" />
+      <input type="image" src="images/queding.png" class="queen2" />
      </div>
     </td>
    </tr>
@@ -214,7 +214,7 @@
       <span class="duoxuan">
        多选
       </span><!--duoxuan/-->
-      <input type="image" src="${contextPath}/assets/images/queding.png" class="queen2" />
+      <input type="image" src="images/queding.png" class="queen2" />
       <div class="more-shou">
        <span class="more">
         更多 &gt;
@@ -244,7 +244,7 @@
       <span class="duoxuan">
        多选
       </span><!--duoxuan/-->
-      <input type="image" src="${contextPath}/assets/images/queding.png" class="queen2" />
+      <input type="image" src="images/queding.png" class="queen2" />
      </div>
     </td>
    </tr>
@@ -480,8 +480,28 @@
    <li>价格 &darr;</li>
    <div class="clears"></div>
   </ul><!--proSelect/-->
-  <div class="phoneBox">
-   <dl>
+  <div class="phoneBox">'
+<c:forEach items="${commodity }" var="commodity">
+ <dl>
+    <dt><a href="${contextPath}/buyinfo/${commodity.id}"><img src="${contextPath}/pro-picture/${commodity.picturePath}" /></a></dt>
+    <dd>
+     <h3>￥${commodity.price}</h3>
+     <div class="phonePars">
+          ${commodity.introduce }
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar" >加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.jsp">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+</c:forEach>
+   <%-- <dl>
     <dt><a href="${contextPath}/buyinfo"><img src="${contextPath}/assets/images/phone5.png" /></a></dt>
     <dd>
      <h3>￥4800.00</h3>
@@ -494,7 +514,7 @@
      </div><!--xiaoliang/-->
      <div class="jiaru-shoucang">
       <span class="jiaruCar">加入购物车</span>
-      <span class="shoucangCar"><a href="quanjing/index.jsp">选用此模型</a></span>>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.jsp">选用此模型</a></span>>
       <div class="clears"></div>
      </div><!--jiaru-shoucang/-->
     </dd>
@@ -512,19 +532,342 @@
      </div><!--xiaoliang/-->
      <div class="jiaru-shoucang">
       <span class="jiaruCar">加入购物车</span>
-      <span class="shoucangCar"><a href="quanjing/index.jsp">选用此模型</a></span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
       <div class="clears"></div>
      </div><!--jiaru-shoucang/-->
     </dd>
    </dl>
-  
-   <div class="clears"></div>
+   <dl>
+    <dt><a href="${contextPath}/buyinfo"><img src="${contextPath}/assets/images/phone3.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone2.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone1.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone5.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone4.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone3.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone2.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone1.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone5.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone4.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone3.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone2.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone1.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone5.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone4.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone3.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone2.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="${contextPath}/assets/images/phone1.png" /></a></dt>
+    <dd>
+     <h3>￥4800.00</h3>
+     <div class="phonePars">
+      Apple 苹果 iPhone 5s 16G TD-LTE/TD-SCDMA/WCDMA/GSM 4G手机 金
+     </div><!--phonePar/-->
+     <div class="xiaoliang">
+      <span class="blue">157451条评价</span>
+      <span class="pad">上海有货</span>
+     </div><!--xiaoliang/-->
+     <div class="jiaru-shoucang">
+      <span class="jiaruCar">加入购物车</span>
+      <span class="shoucangCar"><a href="${contextPath}/assets/quanjing/index.html">选用此模型</a></span>
+      <div class="clears"></div>
+     </div><!--jiaru-shoucang/-->
+    </dd>
+   </dl> --%>
+   <div class="clears"></div> 
   </div><!--phoneBox/-->
- </form><!--proDingzhi/-->
+ </form><!--proDingzhi/--> 
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="index.html"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

@@ -73,96 +73,63 @@
    <dl class="vipNav">
     <dt class="vip_1 vipCur">买家中心</dt>
      <dd><a href="vipOrder.html">我的订单</a></dd>
-     <dd><a href="vipShoucang.html">收藏关注</a></dd>
+     <dd class="ddCur"><a href="vipShoucang.html">收藏关注</a></dd>
     <dt class="vip_2">账户设置</dt>
      <dd><a href="vip.html">个人信息</a></dd>
      <dd><a href="vipPwd.html">密码修改</a></dd>
      <dd><a href="vipAddress.html">收货地址</a></dd>
      <dd><a href="vipXiaofei.html">消费记录</a></dd>
     <dt class="vip_3">客户服务</dt>
-     <dd class="ddCur"><a href="vipQuxiao.html">取消订单/退货</a></dd>
+     <dd><a href="vipQuxiao.html">取消订单/退货</a></dd>
      
      <dd><a href="vipTousu.html">我的投诉</a></dd>
    </dl><!--vipNav/-->
   </div><!--vipLeft/-->
   <div class="vipRight">
-   <h2 class="vipTitle">取消订单/退货</h2>
+   <h2 class="vipTitle">收藏关注</h2>
    
-   <table class="vipQuxiao">
-    <tr>
-     <th>订单编号</th>
-     <th>宝贝信息</th>
-     <th>卖家</th>
-     <th>交易金额</th>
-     <th>退款金额</th>
-     <th>退款状态</th>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-   </table>
-   
+   <table class="vipOrder">
+     <tr>
+      <td><a href="proinfo.html"><img src="images/phone.png" width="60" height="55"></a></td>
+      <td>张益达</td>
+      <td>￥16.9<br />支付宝支付</td>
+      <td>2014年6月23日11:32:17</td>
+      <td><a href="success.html"><strong>等待付款</strong></a></td>
+      <td><a href="vipXiaofei.html">查看</a></td>
+     </tr>
+     <tr>
+      <td><a href="proinfo.html"><img src="images/phone.png" width="60" height="55"></a></td>
+      <td>张益达</td>
+      <td>￥16.9<br />支付宝支付</td>
+      <td>2014年6月23日11:32:17</td>
+      <td><a href="success.html"><strong>等待付款</strong></a></td>
+      <td><a href="vipXiaofei.html">查看</a></td>
+     </tr>
+     <tr>
+      <td><a href="proinfo.html"><img src="images/phone.png" width="60" height="55"></a></td>
+      <td>张益达</td>
+      <td>￥16.9<br />支付宝支付</td>
+      <td>2014年6月23日11:32:17</td>
+      <td><a href="success.html"><strong>等待付款</strong></a></td>
+      <td><a href="vipXiaofei.html">查看</a></td>
+     </tr>
+     <tr>
+      <td><a href="proinfo.html"><img src="images/phone.png" width="60" height="55"></a></td>
+      <td>张益达</td>
+      <td>￥16.9<br />支付宝支付</td>
+      <td>2014年6月23日11:32:17</td>
+      <td><a href="success.html"><strong>等待付款</strong></a></td>
+      <td><a href="vipXiaofei.html">查看</a></td>
+     </tr>
+     <tr>
+      <td><a href="proinfo.html"><img src="images/phone.png" width="60" height="55"></a></td>
+      <td>张益达</td>
+      <td>￥16.9<br />支付宝支付</td>
+      <td>2014年6月23日11:32:17</td>
+      <td><a href="success.html"><strong>等待付款</strong></a></td>
+      <td><a href="vipXiaofei.html">查看</a></td>
+     </tr>
+    </table><!--vipOrder/-->
   </div><!--vipRight/-->
   <div class="clears"></div>
  </div><!--vipBox/-->

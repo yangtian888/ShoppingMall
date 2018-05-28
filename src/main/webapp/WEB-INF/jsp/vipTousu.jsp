@@ -86,83 +86,10 @@
    </dl><!--vipNav/-->
   </div><!--vipLeft/-->
   <div class="vipRight">
-   <h2 class="vipTitle">取消订单/退货</h2>
-   
-   <table class="vipQuxiao">
-    <tr>
-     <th>订单编号</th>
-     <th>宝贝信息</th>
-     <th>卖家</th>
-     <th>交易金额</th>
-     <th>退款金额</th>
-     <th>退款状态</th>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-   </table>
-   
+   <h2 class="vipTitle">我的投诉</h2>
+    <h6 class="gun">
+    <marquee>暂无投诉信息！</marquee>
+   </h6>
   </div><!--vipRight/-->
   <div class="clears"></div>
  </div><!--vipBox/-->

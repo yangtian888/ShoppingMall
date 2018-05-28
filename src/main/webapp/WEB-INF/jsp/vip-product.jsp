@@ -1,13 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>unique</title>
-<link type="text/css" href="css/css.css" rel="stylesheet" />
-<script type="text/javascript" src="js/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
+<link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
+<link type="text/css" href="${contextPath}/assets/css/css/app.css">
+<script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
 
 </head>
 
@@ -29,12 +32,12 @@
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="index.html"><img src="images/logo.png" width="304" height="74" /></a>
+  <a href="index.html"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
   <form action="#" method="get" class="subBox">
    <div class="subBox2">
     <input type="text" class="subText" />
-    <input type="image" src="images/sub.jpg" width="95" height="32" class="subImg" />
+    <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
     <div class="hotci">
     <a href="#">酷派大神</a>
     <a href="#">三星s5</a>
@@ -46,10 +49,10 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="order.html"><img src="images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="order.html"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="car.html"><img src="images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="car.html"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
@@ -68,108 +71,73 @@
  </div><!--navBox/-->
  <div class="vipBox">
   <div class="vipLeft">
-   <h2 class="headImg"><img src="images/vipImg.jpg" width="183" height="169" /></h2>
+   <h2 class="headImg"><img src="${contextPath}/assets/images/vipImg.jpg" width="183" height="169" /></h2>
    <h3 class="vipName">测试webqin</h3>
-   <dl class="vipNav">
-    <dt class="vip_1 vipCur">买家中心</dt>
-     <dd><a href="vipOrder.html">我的订单</a></dd>
-     <dd><a href="vipShoucang.html">收藏关注</a></dd>
-    <dt class="vip_2">账户设置</dt>
-     <dd><a href="vip.html">个人信息</a></dd>
-     <dd><a href="vipPwd.html">密码修改</a></dd>
-     <dd><a href="vipAddress.html">收货地址</a></dd>
-     <dd><a href="vipXiaofei.html">消费记录</a></dd>
-    <dt class="vip_3">客户服务</dt>
-     <dd class="ddCur"><a href="vipQuxiao.html">取消订单/退货</a></dd>
-     
-     <dd><a href="vipTousu.html">我的投诉</a></dd>
-   </dl><!--vipNav/-->
+   <ul class="buy-nav">
+    <li class="buy-nav1"><a href="${contextPath}/vip-sell">卖家中心</a></li>
+    <li class="buy-nav2 buy-navCur"><a href="${contextPath}/vip-product">发布产品</a></li>
+    <li class="buy-nav3"><a href="vip-prolist.html">产品列表</a></li>
+    <li class="buy-nav4"><a href="vip-dingzhi.html">定制服务</a></li>
+    <li class="buy-nav5"><a href="vip-pingjia.html">评价留言</a></li>
+    <li class="buy-nav6"><a href="vip-pwd.html">修改密码</a></li>
+    <li class="buy-nav7"><a href="vip-shou.html">售后管理</a></li>
+   </ul><!--buy-nav/-->
   </div><!--vipLeft/-->
   <div class="vipRight">
-   <h2 class="vipTitle">取消订单/退货</h2>
-   
-   <table class="vipQuxiao">
+   <h2 class="vipTitle">发布产品</h2>
+    <h2 style="color: red;">${success}</h2>
+   <form action="${contextPath}/vip-product" method="post" enctype="multipart/form-data" class="vip-pro">
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+   <table>
     <tr>
-     <th>订单编号</th>
-     <th>宝贝信息</th>
-     <th>卖家</th>
-     <th>交易金额</th>
-     <th>退款金额</th>
-     <th>退款状态</th>
+     <th>信息标题</th>
+     <td><input type="text" name="title"/></td>
     </tr>
     <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
+     <th>手机图片</th>
+     <td><input type="file" name="picture" /></td>
+     <form name="picture" cssClass="field-error"></form>
     </tr>
     <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
+     <th>手机分类</th>
+     <td>
+      <select name="classify">
+       <option value = 1>智能机</option>
+       <option value = 2>功能机</option>
+       <option value = 3>老人机</option>
+       <option value = 4>拖拉机</option>
+      </select>
+     </td>
     </tr>
     <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
+     <th>价格</th>
+     <td><input type="text" name="price"/></td>
+    </tr>
+     <tr>
+     <th>库存</th>
+     <td><input type="text" name="stock"/></td>
     </tr>
     <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
+     <th>产品介绍</th>
+     <td>
+      <textarea name="introduce">
+      
+      </textarea>
+     </td>
     </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-   </table>
-   
+   </table><!--vip-pro/-->
+   <div class="ti-qu">
+    <input type="submit" value="提交" />
+    <input type="reset" value="取消" />
+   </div><!--ti-qu/-->
+   </form>
   </div><!--vipRight/-->
   <div class="clears"></div>
  </div><!--vipBox/-->
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="index.html"><img src="images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="index.html"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

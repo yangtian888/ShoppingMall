@@ -1,25 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
-    <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>    
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
+
+<c:set var="countMoney" value="0"></c:set>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>car</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>unique</title>
 <link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
 <script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
+
 </head>
+
 <body>
-<div class="hrader" id="header">
+ <div class="hrader" id="header">
   <div class="top">
-   <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
-   <a href="${contextPath}/reg">注册</a>
+   <a href="login.html" style="color:#C94E13;">请登录</a> 
+   <a href="reg.html">注册</a>
    <ul class="topNav">
-    <li><a href="${contextPath}/order">我的订单 </a></li>
-    <li class="gouwuche"><a href="${contextPath}/car">购物车</a> <strong style="color:#C94E13;">3</strong></li>
-    <li class="shoucangjia"><a href="#">收藏夹</a></li>
+    <li><a href="order.html">我的订单 </a></li>
+    <li class="gouwuche"><a href="car.html">购物车</a> <strong style="color:#C94E13;">3</strong></li>
+    <li class="shoucangjia"><a href="shoucang.html">收藏夹</a></li>
     <li class="kefus"><a href="#">联系客服</a></li>
 <li><a href="#" class="lan">中文</a></li>
     <li><a href="#" class="lan">English</a></li>
@@ -29,10 +34,9 @@
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="index.html"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
   </h1>
-  <form action="" method="get" class="subBox">
-  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+  <form action="#" method="get" class="subBox">
    <div class="subBox2">
     <input type="text" class="subText" />
     <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
@@ -47,23 +51,23 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="${contextPath}/order"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="order.html"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="${contextPath}/car"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="car.html"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
  </div><!--mid-->
  <div class="navBox navBg3">
   <ul class="nav">
-   <li><a href="${contextPath}/index">首页</a></li>
-   <li><a href="${contextPath}/buy">买家</a></li>
-   <li><a href="${contextPath}/sell">卖家</a></li>
-   <li><a href="${contextPath}/vip">会员中心</a></li>
-   <li><a href="#">悬赏榜</a></li>
-   <li><a href="#" class="luntan">论坛</a></li>
-   <li class="navCur"><a href="help.jsp">帮助</a></li>
+   <li><a href="index.html">首页</a></li>
+   <li><a href="buy.html">买家</a></li>
+   <li><a href="sell.html">卖家</a></li>
+   <li><a href="vip.html">会员中心</a></li>
+   <li><a href="xuanshang.html">悬赏榜</a></li>
+   <li><a href="luntan.html" class="luntan">论坛</a></li>
+   <li class="navCur"><a href="help.html">帮助</a></li>
    <div class="clears"></div>
   </ul><!--nav/-->
  </div><!--navBox/-->
@@ -72,17 +76,19 @@
    <div class="carImg"><img src="${contextPath}/assets/images/car1.jpg" width="951" height="27" /></div>
    <h4 class="orderTitle">收货地址</h4>
    <table class="ord">
+   <c:forEach items="${address}" var="location">
     <tr>
      <td width="30%">
-      <input type="radio" /> 张大炮
+      <input type="radio" />  ${location.addressee} 
      </td>
      <td width="50%">
-      上海,上海市,普陀区,曹杨路1040弄中友大厦一号楼19楼	,200000,13020129519
+    ${location.zone},${location.address},${location.code},${location.mobilephone}
      </td>
      <td>
       <span class="green upd">[修改]</span> | <span class="green add">[添加]</span> 
      </td>
     </tr>
+    </c:forEach>
    </table><!--ord/-->
    <div class="address">
     <div class="addList">
@@ -126,10 +132,12 @@
      <th width="130">总金额</th>
      <th width="105">操作</th>
     </tr>
+    
+    <c:forEach items="${cars}" var="car">
     <tr>
      <td><input type="checkbox" /></td>
      <td colspan="5" style="text-align:left;color:#930; font-weight:bold;">
-      <img src="${contextPath}/assets/images/dianpu.gif" width="20" height="15" style="position:relative;top:2px;" />
+      <img src="images/dianpu.gif" width="20" height="15" style="position:relative;top:2px;" />
       店铺：unique VIP店铺 上海分店
      </td>
     </tr>
@@ -137,12 +145,12 @@
      <td><input type="checkbox" /></td>
      <td>
       <dl>
-       <dt><a href="proinfo.jsp"><img src="${contextPath}/assets/images/phone.png" width="85" height="85" /></a></dt>
-       <dd>全球最大的中文搜索引擎、致力于让网民更便捷<br /><span class="red">有货：</span>从上海出发</dd>
+       <dt><a href="proinfo.html"><img src="${contextPath}/assets/images/phone.png" width="85" height="85" /></a></dt>
+       <dd>${car.commoditys.title}<br /><span class="red">有货：</span>从上海出发</dd>
        <div class="clears"></div>
       </dl>
      </td>
-     <td><strong class="red">￥70.20</strong></td>
+     <td><strong class="red">￥${car.commoditys.price}</strong></td>
      <td>
      <div class="jia_jian">
       <img src="${contextPath}/assets/images/jian.jpg" width="21" height="25" class="jian" />
@@ -150,48 +158,23 @@
       <img src="${contextPath}/assets/images/jia.jpg" width="21" height="25" class="jia" />
      </div>
      </td>
-     <td><strong class="red">￥70.20</strong></td>
-     <td><a href="#" class="green">收藏</a><br /><a href="#" class="green">删除</a></td>
+     <td><strong class="red">￥${car.commoditys.price * car.goodscount}</strong></td>
+     <td><a href="#" class="green">收藏</a><br /><a href="${contextPath}/del/${car.id}" class="green">删除</a></td>
     </tr>
+    <c:set var="countMoney" value="${countMoney+ car.commoditys.price * car.goodscount}"></c:set>
     <tr>
-     <td><input type="checkbox" /></td>
-     <td colspan="5" style="text-align:left;color:#930; font-weight:bold;">
-      <img src="${contextPath}/assets/images/dianpu.gif" width="20" height="15" style="position:relative;top:2px;" />
-      店铺：unique VIP店铺 北京分店
-     </td>
-    </tr>
-    <tr>
-     <td><input type="checkbox" /></td>
-     <td>
-      <dl>
-       <dt><a href="${contextPath}/proinfo"><img src="${contextPath}/assets/images/phone.png" width="85" height="85" /></a></dt>
-       <dd>全球最大的中文搜索引擎、致力于让网民更便捷<br /><span class="red">有货：</span>从上海出发</dd>
-       <div class="clears"></div>
-      </dl>
-     </td>
-     <td><strong class="red">￥70.20</strong></td>
-     <td>
-     <div class="jia_jian">
-      <img src="${contextPath}/assets/images/jian.jpg" width="21" height="25" class="jian" />
-      <input type="text" class="shuliang" value="1" />
-      <img src="${contextPath}/assets/images/jia.jpg" width="21" height="25" class="jia" />
-     </div>
-     </td>
-     <td><strong class="red">￥70.20</strong></td>
-     <td><a href="#" class="green">收藏</a><br /><a href="#" class="green">删除</a></td>
-    </tr>
-    
+    </c:forEach>
     <tr>
      <td colspan="6"><div class="shanchu"><img src="${contextPath}/assets/images/lajio.jpg" /> 全部删除</div></td>
     </tr>
    </table><!--orderList/-->
    <div class="zongji">
     <strong>所需运费：</strong>￥0.00 &nbsp;&nbsp;
-    <strong>总计(不含运费)：</strong><strong class="red">￥70.42</strong>
+    <strong>总计(不含运费)：</strong><strong class="red">￥${countMoney}</strong>
    </div><!--zongji/-->
    <div class="jiesuan">
-    <a href="${contextPath}/index" class="jie_1">继续购物&gt;&gt;</a>
-    <a href="${contextPath}/order" class="jie_2">立即结算&gt;&gt;</a>
+    <a href="index.html" class="jie_1">继续购物&gt;&gt;</a>
+    <a href="order.html" class="jie_2">立即结算&gt;&gt;</a>
     <div class="clears"></div>
    </div><!--jiesuan/-->
    <div class="clears"></div>
@@ -200,7 +183,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="index.html"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

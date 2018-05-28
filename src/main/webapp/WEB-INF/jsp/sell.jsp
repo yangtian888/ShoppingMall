@@ -1,27 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>unique</title>
-<link type="text/css" href="${contextPath}/assets/css/css.css" rel="stylesheet" />
-<script type="text/javascript" src="${contextPath}/assets/js/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="${contextPath}/assets/js/js.js"></script>
+<link type="text/css" href="css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="js/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
 
 </head>
 
 <body>
  <div class="hrader" id="header">
   <div class="top">
-   <a href="${contextPath}/login" style="color:#C94E13;">请登录</a> 
-   <a href="${contextPath}/reg">注册</a>
+   <a href="login.html" style="color:#C94E13;">请登录</a> 
+   <a href="reg.html">注册</a>
    <ul class="topNav">
-    <li><a href="${contextPath}/order">我的订单 </a></li>
-    <li class="gouwuche"><a href="${contextPath}/car">购物车</a> <strong style="color:#C94E13;">3</strong></li>
-    <li class="shoucangjia"><a href="#">收藏夹</a></li>
+    <li><a href="order.html">我的订单 </a></li>
+    <li class="gouwuche"><a href="car.html">购物车</a> <strong style="color:#C94E13;">3</strong></li>
+    <li class="shoucangjia"><a href="shoucang.html">收藏夹</a></li>
     <li class="kefus"><a href="#">联系客服</a></li>
 <li><a href="#" class="lan">中文</a></li>
     <li><a href="#" class="lan">English</a></li>
@@ -31,12 +29,12 @@
  </div><!--hrader/-->
  <div class="mid">
   <h1 class="logo" style="text-align:left;">
-  <a href="${contextPath}/index"><img src="${contextPath}/assets/images/logo.png" width="304" height="74" /></a>
+  <a href="index.html"><img src="images/logo.png" width="304" height="74" /></a>
   </h1>
   <form action="#" method="get" class="subBox">
    <div class="subBox2">
     <input type="text" class="subText" />
-    <input type="image" src="${contextPath}/assets/images/sub.jpg" width="95" height="32" class="subImg" />
+    <input type="image" src="images/sub.jpg" width="95" height="32" class="subImg" />
     <div class="hotci">
     <a href="#">酷派大神</a>
     <a href="#">三星s5</a>
@@ -48,23 +46,23 @@
   </form><!--subBox/-->
   <div class="ding-gou">
    <div class="ding">
-    <a href="${contextPath}/order"><img src="${contextPath}/assets/images/dingdan.jpg" width="106" height="32" /></a>
+    <a href="order.html"><img src="images/dingdan.jpg" width="106" height="32" /></a>
    </div><!--ding/-->
    <div class="gou">
-    <a href="${contextPath}/car"><img src="${contextPath}/assets/images/gouwuche.jpg" width="126" height="32" /></a>
+    <a href="car.html"><img src="images/gouwuche.jpg" width="126" height="32" /></a>
    </div><!--gou/-->
    <div class="clears"></div>
   </div><!--ding-gou/-->
  </div><!--mid-->
  <div class="navBox navBg2">
   <ul class="nav">
-   <li><a href="${contextPath}/index">首页</a></li>
-   <li><a href="${contextPath}/buy">买家</a></li>
-   <li class="navCur"><a href="${contextPath}/sell">卖家</a></li>
-   <li><a href="${contextPath}/vip">会员中心</a></li>
-   <li><a href="#">悬赏榜</a></li>
-   <li><a href="#" class="luntan">论坛</a></li>
-   <li><a href="#">帮助</a></li>
+   <li><a href="index.html">首页</a></li>
+   <li><a href="buy.html">买家</a></li>
+   <li class="navCur"><a href="sell.html">卖家</a></li>
+   <li><a href="vip.html">会员中心</a></li>
+   <li><a href="xuanshang.html">悬赏榜</a></li>
+   <li><a href="luntan.html" class="luntan">论坛</a></li>
+   <li><a href="help.html">帮助</a></li>
    <div class="clears"></div>
   </ul><!--nav/-->
  </div><!--navBox/-->
@@ -72,17 +70,17 @@
   <div class="banLeft">
    <div class="focus">
     <ul class="rslides f426x240">
-        <li><a href="#"><img src="${contextPath}/assets/images/banner.jpg" width="750" height="300"  /></a></li>
-        <li><a href="#"><img src="${contextPath}/assets/images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="${contextPath}/assets/images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="${contextPath}/assets/images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="${contextPath}/assets/images/banner.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner.jpg" width="750" height="300"  /></a></li>
+        <li><a href="#"><img src="images/banner.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner.jpg" /></a></li>
     </ul>
    </div><!--focus/-->
   </div><!--banLeft/-->
   <div class="banRight">
    <img src="images/xinpin.jpg" width="195" height="57" />
-   <div class="newPhone"><img src="${contextPath}/assets/images/newphone.jpg" width="87" height="163" /></div>
+   <div class="newPhone"><img src="images/newphone.jpg" width="87" height="163" /></div>
    <div class="phonePar">
     <span>华为荣耀6 H60-L01 移动4G</span><br />
     <strong class="cheng">￥2099</strong> <span class="hui">￥3099</span>
@@ -100,38 +98,101 @@
   </ul><!--proSelect/-->
   <div class="sells">
    <dl>
-    <dt><a href="${contextPath}/buyinfo"><img src="${contextPath}/assets/images/sell.jpg" width="140" height="140" /></a></dt>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
     <dd>
-     <h3><a href="${contextPath}/buyinfo">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
      <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
      <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
      <div class="tishi">
       <span>温馨提示：</span>
      </div>
      <div class="sellmails">
-      <a href="quanjing/index.jsp">选用此模型</a>
-      <a class="sellmai" href="buyinfo.jsp">立即购买</a>
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
      </div><!--sellmails/-->
     </dd>
     <div class="clears"></div>
    </dl>
    <dl>
-    <dt><a href="${contextPath}/buyinfo"><img src="${contextPath}/assets/images/sell.jpg" width="140" height="140" /></a></dt>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
     <dd>
-     <h3><a href="${contextPath}/buyinfo">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
      <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
      <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
      <div class="tishi">
       <span>温馨提示：</span>
      </div>
      <div class="sellmails">
-      <a href="quanjing/index.jsp">选用此模型</a>
-      <a class="sellmai" href="buyinfo.jsp">立即购买</a>
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
      </div><!--sellmails/-->
     </dd>
     <div class="clears"></div>
    </dl>
-   
+   <dl>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
+    <dd>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
+     <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
+     <div class="tishi">
+      <span>温馨提示：</span>
+     </div>
+     <div class="sellmails">
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
+     </div><!--sellmails/-->
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
+    <dd>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
+     <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
+     <div class="tishi">
+      <span>温馨提示：</span>
+     </div>
+     <div class="sellmails">
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
+     </div><!--sellmails/-->
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
+    <dd>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
+     <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
+     <div class="tishi">
+      <span>温馨提示：</span>
+     </div>
+     <div class="sellmails">
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
+     </div><!--sellmails/-->
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt><a href="buyinfo.html"><img src="images/sell.jpg" width="140" height="140" /></a></dt>
+    <dd>
+     <h3><a href="buyinfo.html">三星手机 S5SM-G9006V (闪耀白)</a></h3>
+     <h4>国行正品，机打发票，延长一年保修！S5联通版，防水防尘加指纹机密，机皇就是这么拽！</h4>
+     <h5>抢 购 价：<span>￥3555.00</span> (降价通知)</h5>
+     <div class="tishi">
+      <span>温馨提示：</span>
+     </div>
+     <div class="sellmails">
+      <a href="quanjing/index.html">选用此模型</a>
+      <a class="sellmai" href="buyinfo.html">立即购买</a>
+     </div><!--sellmails/-->
+    </dd>
+    <div class="clears"></div>
+   </dl>
    <br /><br />
    <div class="badoo"><span class="disabled"> <  Prev</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2">Next  > </a></div>
   </div><!--sells/-->
@@ -140,7 +201,7 @@
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
-    <a href="${contextPath}/index"><img src="${contextPath}/assets/images/ftlogo.jpg" width="240" height="64" /></a>
+    <a href="index.html"><img src="images/ftlogo.jpg" width="240" height="64" /></a>
     <h3 class="ftphone">400 000 0000 </h3>
     <div class="ftKe">
      客服 7x24小时(全年无休)<br />

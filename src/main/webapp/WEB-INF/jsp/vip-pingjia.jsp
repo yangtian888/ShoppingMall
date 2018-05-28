@@ -70,99 +70,75 @@
   <div class="vipLeft">
    <h2 class="headImg"><img src="images/vipImg.jpg" width="183" height="169" /></h2>
    <h3 class="vipName">测试webqin</h3>
-   <dl class="vipNav">
-    <dt class="vip_1 vipCur">买家中心</dt>
-     <dd><a href="vipOrder.html">我的订单</a></dd>
-     <dd><a href="vipShoucang.html">收藏关注</a></dd>
-    <dt class="vip_2">账户设置</dt>
-     <dd><a href="vip.html">个人信息</a></dd>
-     <dd><a href="vipPwd.html">密码修改</a></dd>
-     <dd><a href="vipAddress.html">收货地址</a></dd>
-     <dd><a href="vipXiaofei.html">消费记录</a></dd>
-    <dt class="vip_3">客户服务</dt>
-     <dd class="ddCur"><a href="vipQuxiao.html">取消订单/退货</a></dd>
-     
-     <dd><a href="vipTousu.html">我的投诉</a></dd>
-   </dl><!--vipNav/-->
+   <ul class="buy-nav">
+    <li class="buy-nav1"><a href="vip-sell.html">卖家中心</a></li>
+    <li class="buy-nav2"><a href="vip-product.html">发布产品</a></li>
+    <li class="buy-nav3"><a href="vip-prolist.html">产品列表</a></li>
+    <li class="buy-nav4"><a href="vip-dingzhi.html">定制服务</a></li>
+    <li class="buy-nav5 buy-navCur"><a href="vip-pingjia.html">评价留言</a></li>
+    <li class="buy-nav6"><a href="vip-pwd.html">修改密码</a></li>
+    <li class="buy-nav7"><a href="vip-shou.html">售后管理</a></li>
+   </ul><!--buy-nav/-->
   </div><!--vipLeft/-->
   <div class="vipRight">
-   <h2 class="vipTitle">取消订单/退货</h2>
-   
-   <table class="vipQuxiao">
-    <tr>
-     <th>订单编号</th>
-     <th>宝贝信息</th>
-     <th>卖家</th>
-     <th>交易金额</th>
-     <th>退款金额</th>
-     <th>退款状态</th>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-    <tr>
-     <td>4894983168496516</td>
-     <td><img src="images/phone.png" width="60" height="55"></td>
-     <td>unique</td>
-     <td class="red">￥1899</td>
-     <td class="green">￥1899</td>
-     <td><strong>退款成功</strong></td>
-    </tr>
-   </table>
-   
+   <ul class="vip-liuyan">
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+    <li>
+     <h3>用户名：<strong>兰博基尼sang</strong></h3>
+     <div class="vlPar">
+      嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。嘴巴没毛，办事不牢。
+     </div><!--vlPar/-->
+     <time>2014年10月22日16:09:57</time>
+    </li>
+   </ul><!--vip-liuyan-->
   </div><!--vipRight/-->
   <div class="clears"></div>
  </div><!--vipBox/-->

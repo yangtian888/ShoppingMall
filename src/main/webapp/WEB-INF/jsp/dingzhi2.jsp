@@ -9,15 +9,6 @@
 <script type="text/javascript" src="js/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 
-<!--瀑布流效果-->
-
-<script type="text/javascript" src="js/js/notification.js"></script>
-<script type="text/javascript" src="js/js/bigimg.js"></script>
-<script type="text/javascript" src="js/js/jquery.lazyload.min.js" ></script>
-<script type="text/javascript" src="js/js/blocksit.min.js"></script>
-<script type="text/javascript" src="js/js/pubu.js"></script>
-<link rel="stylesheet" href="css/css/bigimg.css" type="text/css"/>
-<link rel="stylesheet" href="css/css/pubu.css" type="text/css" media='screen'/>
 </head>
 
 <body>
@@ -66,7 +57,7 @@
  <div class="navBox navBg1">
   <ul class="nav">
    <li><a href="index.html">首页</a></li>
-   <li class="navCur"><a href="buy.html">买家</a></li>
+   <li><a href="buy.html">买家</a></li>
    <li><a href="sell.html">卖家</a></li>
    <li><a href="vip.html">会员中心</a></li>
    <li><a href="xuanshang.html">悬赏榜</a></li>
@@ -75,116 +66,121 @@
    <div class="clears"></div>
   </ul><!--nav/-->
  </div><!--navBox/-->
- <div class="banner">
-  <div class="banLeft">
-   <div class="focus">
-    <ul class="rslides f426x240">
-        <li><a href="#"><img src="images/banner.jpg" width="750" height="300"  /></a></li>
-        <li><a href="#"><img src="images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="images/banner.jpg" /></a></li>
-        <li><a href="#"><img src="images/banner.jpg" /></a></li>
-    </ul>
-   </div><!--focus/-->
-  </div><!--banLeft/-->
-  <div class="banRight">
-   <img src="images/xinpin.jpg" width="195" height="57" />
-   <div class="newPhone"><img src="images/newphone.jpg" width="87" height="163" /></div>
-   <div class="phonePar">
-    <span>华为荣耀6 H60-L01 移动4G</span><br />
-    <strong class="cheng">￥2099</strong> <span class="hui">￥3099</span>
-   </div><!---->
-  </div><!--banRight/-->
-  <div class="clears"></div>
- </div><!--banner/-->
- <div class="proBox">
-  <ul class="proSelect">
-   <li>按拼音排列 &darr;</li>
-   <li>按成交数量排列 &darr;</li>
-   <li>按成交金额排列 &darr;</li>
-   <li>UniqueZi推荐卖家 &darr;</li>
+ <div style="background:#eee;">
+ <div class="dingImg"><img src="images/ding.jpg" width="1599" height="149" /></div>
+ <div class="dingBOx">
+  <h3 class="dingTitle">手机定制 <span>DIY</span> <strong class="shangchuan">上传</strong></h3>
+  <div class="dingLeft">
+   <dl>
+    <dt class="d1">&nbsp;</dt>
+    <dd>
+     <h4>默认配置</h4>
+     <span>6399人选择</span>
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt class="d2">&nbsp;</dt>
+    <dd>
+     <h4>游戏霸主</h4>
+     <span>6399人选择</span>
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt class="d3">&nbsp;</dt>
+    <dd>
+     <h4>自拍神器</h4>
+     <span>6399人选择</span>
+    </dd>
+    <div class="clears"></div>
+   </dl>
+   <dl>
+    <dt class="d4">&nbsp;</dt>
+    <dd>
+     <h4>影音全能</h4>
+     <span>6399人选择</span>
+    </dd>
+    <div class="clears"></div>
+   </dl>
+  </div><!--dingLeft/-->
+  <div class="dingMid">
+   <ul class="zheng">
+    <li><img src="images/zheng1.jpg" width="242" height="480" /></li>
+    <li><img src="images/zheng2.jpg" width="242" height="480" /></li>
+   </ul><!--zheng/-->
+   <div class="bei">
+    <!--<ul class="beiTop">
+     <li><img src="images/beiTop1.jpg" width="233"  height="58" /></li>
+     <li><img src="images/beiTop2.jpg" width="233"  height="58" /></li>
+     <li><img src="images/beiTop3.jpg" width="233"  height="58" /></li>
+    </ul>beiTop/-->
+    <!--<ul class="beiMid">
+     <li><img src="images/beiMid1.jpg" width="233" height="358" /></li>
+     <li><img src="images/beiMid4.jpg" width="233" height="358" /></li>
+     <li><img src="images/beiMid2.jpg" width="233" height="358" /></li>
+     <li><img src="images/beiMid3.jpg" width="233" height="358" /></li> 
+    </ul>beiMid/-->
+    <!--<ul class="beiDown">
+     <li><img src="images/beiDown1.jpg" width="233" height="57" /></li>
+     <li><img src="images/beiDown2.jpg" width="233" height="57" /></li>
+     <li><img src="images/beiDown3.jpg" width="233" height="57" /></li>
+    </ul>beiMid/-->
+    <ul class="zhengzheng">
+     <li><img src="images/zheng1.jpg" width="242" height="480" /></li>
+     <li><img src="images/zheng2.jpg" width="242" height="480" /></li>
+    </ul><!--zheng/-->
+   </div><!--bei/-->
    <div class="clears"></div>
-  </ul><!--proSelect/-->
-  
-  <!--瀑布流  start-->
-<div id="wrapper">
-	<div id="container" style="width:990px;">
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="1" src="images/pixel.gif" data-original="images/1.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="2" src="images/pixel.gif" data-original="images/2.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="3" src="images/pixel.gif" data-original="images/3.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="4" src="images/pixel.gif" data-original="images/4.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="5" src="images/pixel.gif" data-original="images/5.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="6" src="images/pixel.gif" data-original="images/6.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="7" src="images/pixel.gif" data-original="images/7.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="8" src="images/pixel.gif" data-original="images/8.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="9" src="images/pixel.gif" data-original="images/9.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="10" src="images/pixel.gif" data-original="images/10.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="11" src="images/pixel.gif" data-original="images/11.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="12" src="images/pixel.gif" data-original="images/12.jpg" width="225" /></a>
-			</div>
-		</div>
-		<div class="grid">
-			<div class="imgholder">
-				<a href="buyinfo.html"><img class="lazy thumb_photo" title="13" src="images/pixel.gif" data-original="images/13.jpg" width="225" /></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--瀑布流 end-->
-<div class="clear"></div>
-
-
-
-
-</div><!--end-->
- </div><!--proBox/-->
+   <ul class="xingneng">
+    <li class="xn1">&nbsp;</li>
+    <li class="xn2">&nbsp;</li>
+    <li class="xn3">&nbsp;</li>
+    <li class="xn4">&nbsp;</li>
+    <li class="xn5">&nbsp;</li>
+   </ul><!--xingneng/-->
+   <ul class="xingneng2">
+    <li class="xn21">四核1.5GHz</li>
+    <li class="xn22">1GB + 16GB</li>
+    <li class="xn23">800万像素</li>
+    <li class="xn24">5.0英寸 FHD</li>
+    <li class="xn25"></li>
+   </ul><!--xingneng2/-->
+  </div><!--dingMid/-->
+  <div class="dingRight">
+   <h3>外观</h3>
+   <h4>机身正面(屏幕+边框)</h4>
+   <ul class="jisy drZheng">
+    <li class="cffffff">&nbsp;</li>
+    <li class="c000000">&nbsp;</li>
+   </ul><!--drZheng/-->
+   <h4>机身背面</h4>
+   <ul class="jisy drZhong">
+    <li class="c000000">&nbsp;</li>
+    <li class="cb7b7b7">&nbsp;</li>
+   </ul><!--drZheng/-->
+   <!--<h4>机身背面上下段</h4>
+   <ul class="jisy drSx">
+    <li class="c000000">&nbsp;</li>
+    <li class="cffffff">&nbsp;</li>
+    <li class="cc5a6ba">&nbsp;</li>
+    <li class="c64baaf">&nbsp;</li>
+    <li class="cc6e340">&nbsp;</li>
+    <li class="cc6e340">&nbsp;</li>
+    <li class="cd05708">&nbsp;</li>
+    <li class="cdd4545">&nbsp;</li>
+    <li class="cd5c86d">&nbsp;</li>
+    <li class="c23d3a6">&nbsp;</li>
+    <li class="cff1372">&nbsp;</li>
+   </ul>drZheng/-->
+   <div class="jiagesss">
+    ￥ <strong>2499</strong>
+    <a href="#">确认配置</a>
+   </div><!--jiagesss/-->
+  </div><!--dingRight/-->
+  <div class="clears"></div>
+ </div><!--dingBOx/-->
+ </div>
  <div class="footBox">
   <div class="footers">
    <div class="footersLeft">
@@ -248,5 +244,28 @@
   <br />
   <span>&copy; 2014 Unqezi 使用前必读 沪ICP备 12007626号-1</span>
  </div><!--footer/-->
+ <div class="shangchuanBox">
+  <h1><span class="close"><img src="images/close.png" width="20" height="20" /></span></h1>
+  <form action="" method="post" enctype="multipart/form-data"> 
+   <div class="sList">
+    <label>标题：</label>
+    <input type="text" />
+   </div><!--sList/-->
+   <div class="sList">
+    <label>图片：</label>
+    <input type="file" name="file" /> 
+   </div><!--sList/-->
+   <div class="sList2">
+    <label>内容：</label>
+    <textarea>
+     内容内容内容
+    </textarea>
+   </div><!--sList/-->
+   <div class="queren">
+    <input type="button" value=" 确 认 上 传 ">
+   </div><!--queren/-->
+  </form>
+ </div><!--shangchuanBox/-->
+ <div class="bg100">&nbsp;</div>
 </body>
 </html>
